@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | L'Épicerie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="custom-cursor"></div>
+
+    <nav class="navbar-custom" id="navbar">
+        <a href="../../index.html" class="nav-logo">L'ÉPICERIE</a>
+        <ul class="nav-menu">
+            <li><a href="../../index.html">INICIO</a></li>
+            <li><a href="../../views/shop/shop.html">TIENDA</a></li>
+            <li><a href="../about/about.html">NOSOTROS</a></li>
+            <li><a href="../../views/contact/contact.html">CONTACTO</a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="cart-icon" id="cart-trigger">
+                <i class="bi bi-bag"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero about-hero">
+        <div class="hero-bg" id="hero-parallax"
+            style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1534723452862-4c874018d66d?auto=format&fit=crop&q=80&w=1920');">
+        </div>
+        <div class="hero-content" id="hero-text">
+            <p class="overline">Nuestra Herencia</p>
+            <h1 class="brand-font">Desde 1926</h1>
+        </div>
+    </header>
+
+    <main class="about-wrapper">
+        <div class="container">
+            <section class="story-block reveal-on-scroll">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 p-5">
+                        <span class="section-tag">EL ORIGEN</span>
+                        <h2 class="brand-font display-4 mb-4">La historia detrás de la curaduría.</h2>
+                        <p class="story-text">En L'Épicerie, no solo vendemos alimentos; seleccionamos legados. Cada
+                            producto en nuestros estantes ha sido elegido por su origen ético y su calidad inigualable.
+                            Creemos que la excelencia en la mesa es el pilar de una vida bien vivida.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="story-image">
+                            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1000"
+                                alt="Artesanía Gourmet" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="philosophy-panel reveal-on-scroll">
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <div class="philosophy-image">
+                            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=1000"
+                                alt="Vinos Reserva" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-5 d-flex flex-column justify-content-center bg-dark-green">
+                        <span class="section-tag gold">NUESTRO COMPROMISO</span>
+                        <h2 class="brand-font display-5 text-white mb-4">Calidad sin concesiones.</h2>
+                        <p class="text-white-50 lead">Trabajamos directamente con pequeños productores en Francia,
+                            México y Grecia para asegurar que cada botella, queso y grano cumpla con los estándares más
+                            rigurosos de frescura y sabor.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="timeline-section py-5 reveal-on-scroll">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-tag">Nuestra Trayectoria</span>
+                    <h2 class="brand-font h1">Hitos de Excelencia</h2>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="year">1926</span>
+                            <h3>La Fundación</h3>
+                            <p>Apertura del primer mercado de autor en la ciudad, enfocado en productos de importación
+                                directa.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="year">1970</span>
+                            <h3>Expansión Gourmet</h3>
+                            <p>Inauguramos nuestra cava privada y el departamento de quesos artesanales curados.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="year">2026</span>
+                            <h3>Era Digital</h3>
+                            <p>Lanzamiento de L'Épicerie Online, llevando la selección más fina a cada rincón del país.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="side-cart" class="cart-sidebar">
+    </div>
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+/* =========================================
+   L'ÉPICERIE - SHOP PREMIUM STYLES
+   ========================================= */
+
+/* --- Layout Global de la Tienda --- */
+.shop-main {
+    background-color: var(--blanco-hueso);
+    min-height: 100vh;
+}
+
+/* Hero Extendido (Estilo Index) */
+.hero.shop-hero-main {
+    height: 85vh !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-subtext {
+    font-weight: 300;
+    letter-spacing: 2px;
+    opacity: 0.9;
+    margin-top: 1rem;
+}
+
+/* Contenedor de contenido que se superpone al Hero */
+.shop-content-wrapper {
+    margin-top: -80px; /* Superposición elegante */
+    position: relative;
+    z-index: 5;
+    background-color: var(--blanco-hueso);
+    border-radius: 40px 40px 0 0;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+}
+
+/* --- Navbar Fijo en Tienda --- */
+.navbar-custom.scrolled {
+    position: fixed !important;
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(10px);
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* --- Toolbar Refinada (Buscador y Filtros) --- */
+.shop-toolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+    padding: 3rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.03);
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.search-container i {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--dorado-suave);
+    font-size: 1.2rem;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 1.2rem 1.5rem 1.2rem 4rem;
+    border: 1px solid #f0f0f0;
+    border-radius: 50px;
+    background: var(--blanco-hueso);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.4s ease;
+}
+
+.search-container input:focus {
+    border-color: var(--dorado-suave);
+    background: white;
+    box-shadow: 0 10px 25px rgba(197, 164, 126, 0.1);
+}
+
+.filter-container {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 12px 28px;
+    border: 1px solid #eee;
+    background: white;
+    color: #666;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.filter-btn:hover {
+    border-color: var(--dorado-suave);
+    color: var(--verde-bosque);
+}
+
+.filter-btn.active {
+    background: var(--verde-bosque);
+    color: white;
+    border-color: var(--verde-bosque);
+    box-shadow: 0 5px 15px rgba(27, 46, 38, 0.2);
+}
+
+/* --- Grid y Tarjetas de Producto Premium --- */
+#product-grid {
+    min-height: 600px;
+    transition: all 0.5s ease;
+}
+
+.product-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f8f8f8;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.06);
+    border-color: var(--dorado-suave);
+}
+
+.product-image-wrapper {
+    width: 100%;
+    aspect-ratio: 1/1; /* Mantiene alineación perfecta */
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    background: var(--blanco-hueso);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+    transition: transform 0.6s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.1);
+}
+
+.product-category {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--dorado-suave);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.product-name {
+    font-size: 1.2rem;
+    color: var(--verde-bosque);
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    min-height: 3.4rem; /* Evita saltos de línea irregulares */
+}
+
+.product-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--texto-oscuro);
+}
+
+.add-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--verde-bosque);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    background: var(--dorado-suave);
+    transform: scale(1.02);
+}
+
+/* Animación de filtrado */
+#product-grid > div {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* --- Chef Curation Card (Diseño Editorial) --- */
+.chef-curation {
+    margin-top: 6rem;
+}
+
+.curation-card {
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.04);
+    border: 1px solid rgba(197, 164, 126, 0.1);
+}
+
+.section-tag {
+    color: var(--dorado-suave);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.75rem;
+    display: block;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.curation-text {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 2.5rem;
+    border-left: 3px solid var(--dorado-suave);
+    padding-left: 25px;
+}
+
+.curation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 500px;
+    transition: transform 1s ease;
+}
+
+.curation-card:hover .curation-image img {
+    transform: scale(1.03);
+}
+
+.btn-dark-outline {
+    background: transparent;
+    border: 2px solid var(--verde-bosque);
+    color: var(--verde-bosque);
+    padding: 15px 35px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.btn-dark-outline:hover {
+    background: var(--verde-bosque);
+    color: white;
+}
+
+/* --- Mobile Responsive --- */
+@media (max-width: 768px) {
+    .shop-hero-main { height: 60vh !important; }
+    .shop-content-wrapper { margin-top: -30px; padding-top: 2rem; }
+    .shop-toolbar { padding: 1.5rem; }
+    .curation-image img { min-height: 300px; }
+}
+
+/* Asegura que SweetAlert2 aparezca por encima del carrito lateral */
+.swal-al-frente {
+    z-index: 99999 !important; /* Un valor extremadamente alto */
+}
+
+/* Opcional: Si el botón de Finalizar Compra se ve muy pegado al borde, 
+ajustamos el margen del contenedor del carrito */
+.cart-footer {
+    padding: 2rem;
+    background: #fff;
+    border-top: 1px solid #eee;
+}

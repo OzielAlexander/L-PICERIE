@@ -1,0 +1,101 @@
+/* --- Contact Page Styles --- */
+
+.contact-hero {
+    height: 65vh !important;
+}
+
+.contact-wrapper {
+    margin-top: -80px;
+    padding-bottom: 8rem;
+    position: relative;
+    z-index: 10;
+}
+
+.contact-card {
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.08);
+}
+
+.contact-info-panel {
+    background: var(--verde-bosque);
+    color: white;
+    padding: 4rem;
+}
+
+.contact-info-panel h2 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+}
+
+.info-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.info-item i {
+    color: var(--dorado-suave);
+    font-size: 1.5rem;
+}
+
+.info-item h5 {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    opacity: 0.6;
+}
+
+.info-item p {
+    font-weight: 300;
+}
+
+/* --- Form Styles --- */
+.contact-form label {
+    display: block;
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #888;
+}
+
+.contact-form input, 
+.contact-form textarea, 
+.contact-form select {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid #eee;
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: var(--dorado-suave);
+}
+
+.contact-form select {
+    cursor: pointer;
+    color: #555;
+}
+
+.btn-premium {
+    background: var(--verde-bosque);
+    color: white;
+    border: none;
+    padding: 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn-premium:hover {
+    background: var(--dorado-suave);
+}

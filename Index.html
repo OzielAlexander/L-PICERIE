@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Épicerie | Mercado de Autor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <div class="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <div id="custom-cursor"></div>
+
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="logo-wrapper">
+                <span class="preloader-logo">L'ÉPICERIE</span>
+                <div class="loader-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar-custom" id="navbar">
+        <a href="index.html" class="nav-logo">L'ÉPICERIE</a>
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="views/shop/shop.html">Tienda</a></li>
+            <li><a href="views/about/about.html">Nosotros</a></li>
+            <li><a href="views/contact/contact.html">Contacto</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <i class="bi bi-search"></i>
+            <div class="cart-icon" id="cart-trigger">
+                <i class="bi bi-bag"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg" id="hero-parallax"></div>
+        <div class="hero-content" id="hero-text">
+            <p class="overline">Selección Gourmet</p>
+            <h1>La excelencia en tu mesa</h1>
+            <button class="btn-premium" onclick="location.href='views/shop/shop.html'">Explorar Cosecha</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="company-intro container reveal-on-scroll">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <p class="overline">Nuestra Esencia</p>
+                    <h2 class="brand-font display-4 mb-4">Más que un mercado, una curaduría de vida.</h2>
+                    <p class="lead">L'Épicerie nace de la pasión por los detalles que transforman lo cotidiano en extraordinario. Nos dedicamos a buscar en los rincones más remotos del mundo aquellos sabores y texturas que cuentan una historia de respeto por la tierra y maestría artesanal.</p>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="image-stack">
+                        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800" alt="Gourmet" class="img-fluid main-img">
+                        <div class="floating-badge">Est. 2026</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="philosophy-section">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-md-4 reveal-on-scroll">
+                        <div class="pilar-card">
+                            <span class="pilar-num">01</span>
+                            <h3 class="brand-font">Misión</h3>
+                            <p>Elevar el estándar alimenticio de nuestra comunidad, proveyendo acceso exclusivo a productos de autor que garantizan pureza, origen y una experiencia sensorial inigualable.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 reveal-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="pilar-card">
+                            <span class="pilar-num">02</span>
+                            <h3 class="brand-font">Visión</h3>
+                            <p>Convertirnos en el referente global del fine-food retail, donde la tradición artesanal y la innovación sostenible convergen para definir el futuro del lujo gastronómico.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 reveal-on-scroll" style="transition-delay: 0.4s;">
+                        <div class="pilar-card">
+                            <span class="pilar-num">03</span>
+                            <h3 class="brand-font">Objetivo</h3>
+                            <p>Establecer una cadena de valor transparente que dignifique el trabajo del productor y deleite el paladar del consumidor, manteniendo siempre la excelencia como norma innegociable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="collections-mosaic container py-5">
+            <div class="text-center mb-5 reveal-on-scroll">
+                <p class="overline">Explora el Mundo</p>
+                <h2 class="brand-font display-5">Nuestras Colecciones</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-8 reveal-on-scroll">
+                    <div class="collection-card large" onclick="location.href='views/shop/shop.html'">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=1200" alt="Cavas">
+                        <div class="collection-overlay">
+                            <h3 class="brand-font">Vinos y Cavas</h3>
+                            <p>Etiquetas de autor y reservas limitadas.</p>
+                            <span class="btn-minimal">Ver Colección</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="collection-card small" onclick="location.href='views/shop/shop.html'">
+                        <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&q=80&w=600" alt="Quesos">
+                        <div class="collection-overlay">
+                            <h3 class="brand-font">Charcutería</h3>
+                            <span class="btn-minimal">Explorar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal-on-scroll">
+                    <div class="collection-card small" onclick="location.href='views/shop/shop.html'">
+                        <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&q=80&w=600" alt="Aceites">
+                        <div class="collection-overlay">
+                            <h3 class="brand-font">Despensa</h3>
+                            <span class="btn-minimal">Explorar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8 reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="collection-card large" onclick="location.href='views/shop/shop.html'">
+                        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1200" alt="Gourmet">
+                        <div class="collection-overlay">
+                            <h3 class="brand-font">Importación Directa</h3>
+                            <p>Sabores exclusivos de Francia, Grecia y el mundo.</p>
+                            <span class="btn-minimal">Ver Todo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="footer-logo">L'Épicerie</div>
+                <p class="footer-text mb-4">Elevando la experiencia cotidiana de mercado a un nivel de arte culinario y sofisticación.</p>
+                
+                <div class="footer-social">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://x.com" target="_blank" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://whatsapp.com" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="col-md-2 offset-md-1 mb-4">
+                <h5 class="footer-heading">Colecciones</h5>
+                <ul class="footer-links">
+                    <li><a href="views/shop/shop.html">Vinos y Cavas</a></li>
+                    <li><a href="views/shop/shop.html">Quesos Artesanales</a></li>
+                    <li><a href="views/shop/shop.html">Importación Directa</a></li>
+                    <li><a href="views/about/about.html">Nuestra Historia</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 offset-md-1 mb-4">
+                <h5 class="footer-heading">Boutique Santa Fe</h5>
+                <p class="footer-text mb-2"><i class="bi bi-geo-alt-fill gold-text"></i> Av. Santa Fe 480, Lomas de Santa Fe, CDMX.</p>
+                <p class="footer-text mb-4"><i class="bi bi-clock-fill gold-text"></i> Lun - Sáb: 09:00 - 21:00 | Dom: 10:00 - 18:00</p>
+                
+                <h5 class="footer-heading" style="font-size: 0.8rem; opacity: 0.8;">Atención Concierge</h5>
+                <a href="views/contact/contact.html" class="btn-premium" style="padding: 10px 20px; font-size: 0.7rem; display: inline-block; text-decoration: none;">Solicitar Asesoría Privada</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 L'ÉPICERIE FINE FOODS. MÉXICO.</p>
+        </div>
+    </div>
+</footer>
+
+    <div id="product-modal" class="modal-overlay">
+        <div class="modal-container">
+            <button class="modal-close" id="close-modal"><i class="bi bi-x"></i></button>
+            <div id="modal-content" class="row g-0"></div>
+        </div>
+    </div>
+
+    <div id="side-cart" class="cart-sidebar">
+        <div class="cart-header">
+            <h2 class="brand-font">Su Selección</h2>
+            <button class="close-cart" id="close-cart-btn"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div id="cart-items-container" class="cart-body"></div>
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>Subtotal</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="checkout-btn">Finalizar Pedido</button>
+        </div>
+    </div>
+
+    <div id="cart-overlay" class="cart-overlay"></div>
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
